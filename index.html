@@ -1,0 +1,149 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management System</title>
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #4e54c8; /* Original primary color */
+            --secondary-color: #a0d8e1; /* Ice blue color */
+            --nav-bg-color: #555;
+            --text-color: #fff;
+            --button-bg-color: #fff;
+            --button-text-color: #555;
+            --hover-bg-color: #ddd;
+            --footer-bg-color: #333;
+            --link-hover-color: #4e54c8; /* Highlight color for links */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #444;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            background-color: var(--nav-bg-color);
+            color: var(--text-color);
+            padding: 1em;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--hover-bg-color);
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background-image: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-color);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .hero a {
+            background-color: var(--button-bg-color);
+            color: var(--button-text-color);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .hero a:hover {
+            background-color: var(--hover-bg-color);
+            color: var(--primary-color);
+        }
+
+        /* Link Highlighting */
+        .hero a:hover {
+            color: var(--link-hover-color); /* Change text color on hover */
+            text-decoration: underline; /* Underline the link on hover */
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: var(--footer-bg-color);
+            color: var(--text-color);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav aria-label="Main Navigation">
+        <a href="/index.html">Project Management System</a>
+        <a href="/students.html">Manage Students</a>
+        <a href="/projects.html">Manage Projects</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Welcome to the Project Management System</h1>
+        <p>Use the navigation bar to manage projects, tasks, or teams.</p>
+        <a href="/create-project.html">Create New Project</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Project Management System. All rights reserved.</p>
+        <p><a href="/contact.html" style="color: var(--text-color); text-decoration: underline;">Contact Us</a></p>
+   
+
